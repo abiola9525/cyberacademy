@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+{% extends 'users/base.html' %}
+{% load static %}
+{% block content %}
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: orange;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: grey;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a  href="/preview">Course Preview</a></li>
+  <li><a  href="/intro">Introduction</a></li>
+  <li><a  href="/lesson1">Lesson - One</a></li>
+  <li><a  href="/lesson2">Lesson - Two</a></li>
+  <li><a  href="/lesson3">Lesson Three</a></li>
+  <li><a  href="/lesson4">Lesson Four</a></li>
+  <li><a  href="/lesson5">Lesson Five</a></li>
+  <li><a  href="/lesson6">Lesson Six</a></li>
+  <li><a  href="/lesson7">Lesson Seven</a></li>
+  <li><a  href="/lesson8">Lesson Eight</a></li>
+  <li><a class="active" href="/lesson9">Lesson Nine</a></li>
+  <li><a  href="/lesson10">Lesson Ten</a></li>
+  <li><a  href="/lesson11">Lesson Eleven</a></li>
+  <li><a  href="/lesson12">Lesson Twelve</a></li>
+  <li><a  href="/lesson13"> Lesson Thirteen</a></li>
+</ul>
+
+<div class="iframe-container" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <div className="App">
+        <h2>Lesson Nine:The Complete Know-How on the MD5 Algorithm</h2>
+        <iframe width="740" height="422" src="https://www.youtube.com/embed/r6GlzIWiMD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+      <br/><br/><br/>
+
+
+    <a class="btn" href="/quiz" style="color: white; margin-left: 400px; background-color: #fd5e14;"type="submit" id="body-link-row">Take Assesment</a>
+      <div>
+      <br/><br/>
+        <a class="btn" href="/lesson8" style="color: white; background-color: #fd5e14;"type="submit" id="body-link-row">Previous</a>   
+        <a class="btn" href="/lesson10" style="color: white; margin-left: 900px; background-color: #fd5e14;"type="submit" id="body-link-row">Next</a>
+</div>
+
+</body>
+
+
+{% endblock content %}
+</html>
+

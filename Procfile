@@ -1,0 +1,1 @@
+web: gunicorn authsysproject.wsgi --log-file -
